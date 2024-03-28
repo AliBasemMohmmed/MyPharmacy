@@ -1,0 +1,63 @@
+@model MyPharmacy.Models.Doctor
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الطبيب</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("../lib/img/aaa.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">صفحة الطبيب</h1>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-right mb-2">بيانات الطبيب</h2>
+                    <p class="text-right mb-2" style="color: gold; text-shadow: 2px 2px 4px #000000;">
+                        <strong>الاسم:</strong> @Model.Name</p>
+                    <p class="text-right mb-2" style="color: gold; text-shadow: 2px 2px 4px #000000;">
+                        <strong>الاختصاص:</strong> @Model.Specialization</p>
+
+
+                </div>
+            </div>
+            <div class="text-center">
+                <h2 class="text-center">الإجراءات</h2>
+                <ul class="list-unstyled">
+                    <li><a asp-action="Create" class="btn btn-success btn-block mb-2" style="color: gold; text-shadow: 2px 2px 4px #000000;">إنشاء وصفة</a></li>
+                    <li><a href="#" class="btn btn-success btn-block mb-2" style="color: gold; text-shadow: 2px 2px 4px #000000;">تعديل وصفة</a></li>
+                    <li><a href="#" class="btn btn-success btn-block mb-2" style="color: gold; text-shadow: 2px 2px 4px #000000;">إلغاء وصفة</a></li>
+                    <li><a href="#" class="btn btn-success btn-block mb-2" style="color: gold; text-shadow: 2px 2px 4px #000000;">إيقاف وصفة</a></li>
+                </ul>
+            </div <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">القسم الإعلاني</h2>
+                <!-- القسم الإعلاني هنا -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الطبيب</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>

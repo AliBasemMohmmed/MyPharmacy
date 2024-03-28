@@ -1,0 +1,79 @@
+@model MyPharmacy.Models.PrescriptionViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء وصفة</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+        }
+
+        .form-container {
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background-image: url("../lib/img/aaa.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="form-container" style="text-align: right;">
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="patientName" dir="rtl">اسم المريض الرباعي:</label>
+                            <input type="text" class="form-control" id="patientName" name="PatientName" dir="rtl" />
+                        </div>
+                        <div class="form-group">
+                            <label for="idCardImage" dir="rtl">صورة بطاقة الاحوال المدنية:</label>
+                            <input type="file" class="form-control-file" id="idCardImage" name="IdCardImage"
+                                dir="rtl" />
+                        </div>
+                        <div class="form-group">
+                            <label for="patientImage" dir="rtl">صورة المريض:</label>
+                            <input type="file" class="form-control-file" id="patientImage" name="PatientImage"
+                                dir="rtl" />
+                        </div>
+                        <div class="form-group">
+                            <label for="previousPrescriptionImage" dir="rtl">صورة لوصفة سابقه ورقية:</label>
+                            <input type="file" class="form-control-file" id="previousPrescriptionImage"
+                                name="PreviousPrescriptionImage" dir="rtl" />
+                        </div>
+                        <div class="form-group">
+                            <label for="patientAge" dir="rtl">عمر المريض:</label>
+                            <input type="number" class="form-control" id="patientAge" name="PatientAge" dir="rtl" />
+                        </div>
+                        <div class="form-group">
+                            <label for="diagnosis" dir="rtl">التشخيص:</label>
+                            <input type="text" class="form-control" id="diagnosis" name="Diagnosis" dir="rtl" />
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">إنشاء وصفة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

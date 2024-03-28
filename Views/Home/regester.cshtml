@@ -1,0 +1,60 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب مريض جديد</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-container {
+            max-width: 400px;
+            /* تحديد عرض النموذج */
+            margin: auto;
+            /* توسيط النموذج */
+            text-align: right;
+            /* محتوى النموذج من اليمين */
+        }
+
+        body {
+            background-image: url("../lib/img/aaa.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="text-center mb-4" style="color: gold; text-shadow: 2px 2px 4px #000000;">إنشاء حساب مريض جديد</p>
+        <div class="form-container">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="patientName">اسم المريض:</label>
+                    <input type="text" class="form-control form-control-sm" id="patientName" name="PatientName" />
+                </div>
+                <div class="form-group">
+                    <label for="patientID">رقم هوية المريض:</label>
+                    <input type="text" class="form-control form-control-sm" id="patientID" name="PatientID" />
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة السر:</label>
+                    <input type="password" class="form-control form-control-sm" id="password" name="Password" />
+                </div>
+                <div class="form-group">
+                    <label for="patientImage">صورة المريض:</label>
+                    <input type="file" class="form-control-file" id="patientImage" name="PatientImage" />
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">تاريخ الميلاد:</label>
+                    <input type="date" class="form-control form-control-sm" id="birthdate" name="Birthdate" />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">إنشاء حساب</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
